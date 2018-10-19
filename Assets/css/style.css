@@ -1,6 +1,6 @@
 /* General Elements*/
 body{
-	background-image: url("https://raw.githubusercontent.com/jahdasha/crystal-game/master/assets/images/background.png")
+	background-image: url(file:///Users/vincishar/Desktop/unit-4-game/Assets/images/background.png)
 }
 div{
 	background-color: white;

@@ -1,0 +1,38 @@
+body {
+    background-image: url("file:///Users/vincishar/Desktop/unit-4-game/Assets/images/Background.jpg");
+}  
+
+h1 {
+    border: 10px double black; 
+    padding: 25px; 
+    background-origin: content-box, padding-box;
+}  
+
+div {
+    border: 10px double black; 
+    padding: 25px; 
+    background-origin: content-box, padding-box;
+}   
+
+div {
+    background-color: aliceblue;
+}  
+
+#image1 {
+    height: 50px; 
+    width: 10%;
+}   
+#image2 {
+    height: 50px; 
+    width: 10%;
+}   
+#image3 {
+    height: 50px; 
+    width: 10%;
+}   
+#image4 {
+    height: 50px; 
+    width: 10%;
+}   
+
+ 

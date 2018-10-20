@@ -1,24 +1,29 @@
 $( document ).ready(function(){
     var Random=Math.floor(Math.random()*101+19)
-    
-    $('#randomNumber').text(Random);
+       // Adding random number to the randomNumber id in the html doc  
+
+    $('#randomNumber').text(Random);{
     var num1= Math.floor(Math.random()*10+2)
     var num2= Math.floor(Math.random()*10+2)
     var num3= Math.floor(Math.random()*10+2)
     var num4= Math.floor(Math.random()*10+2)
-    
+    userTotal= 0;
+    $('#finalTotal').text(userTotal);
+    }
 
     var userTotal= 0; 
     var wins= 0;
     var losses = 0;
     
   $('#numberWins').text(wins);
-  $('#numberLosses').text(losses);
+  $('#numberLosses').text(losses);  
+
   
-  function reset(){
-        Random=Math.floor(Math.random()*100+30);
-        console.log(Random)
-       
+  //resets the game
+  function reset (){
+        Random=Math.floor(Math.random()*101+20);
+        console.log(Random);
+        $("#numberToGet").text(random);
         num1= Math.floor(Math.random()*10+2);
         num2= Math.floor(Math.random()*10+2);
         num3= Math.floor(Math.random()*10+2);
@@ -26,7 +31,7 @@ $( document ).ready(function(){
         userTotal= 0;
         $('#finalTotal').text(userTotal);
         } 
-  
+
   function yay(){
   alert("Congratulations you won!");
     wins++; 
@@ -38,9 +43,9 @@ $( document ).ready(function(){
   alert ("You lose!");
     losses++;
     $('#numberLosses').text(losses);
-    reset()
+    reset();
   }
-  
+  // Click Functions
     $('#one').on ('click', function(){
       userTotal = userTotal + num1;
       console.log("New userTotal= " + userTotal);
@@ -89,4 +94,3 @@ $( document ).ready(function(){
           }
     });   
   }); 
-  

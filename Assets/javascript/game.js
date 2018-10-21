@@ -4,15 +4,22 @@ var wins = 0;
 document.getElementById('wincount').innerHTML = wins; 
 var losses = 0; 
 document.getElementById('losses').innerHTML = losses; 
-var targetscore = 0; 
+var targetscore = Math.floor(Math.random()*101+20);; 
 document.getElementById('targetscore').innerHTML = targetscore; 
-var totalscore = 0; 
+var totalscore = 0;
 document.getElementById('totalscore').innerHTML = totalscore;
 userTotal = 0
 
+var wins = 0; 
+var losses = 0; 
+var totalscore = 0; 
 var random = Math.floor(Math.random()*101+20);
+winCount.innerHTML = Wins; 
+lossesCount.innerHTML = Losses;
+totalscore.innerHTML = Totalscore; 
 
 $("#numberToGet").text(random);   
+   
 
 var num1 = Math.floor(Math.random()*14+2);
 var num2 = Math.floor(Math.random()*14+2);
@@ -37,7 +44,7 @@ function reset() {
 }
 
 function winner() {
-    alert("You Won!!");
+    alert("You Won!!")
     wins++;
     $("#numberWins").text(wins);
     reset();
@@ -45,7 +52,7 @@ function winner() {
 
 function loser() {
     alert("You Lose!!");
-    losses++;
+    losses++; 
     $("#numberLosses").text(losses);
     reset();
 }

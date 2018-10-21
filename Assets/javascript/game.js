@@ -10,13 +10,8 @@ var totalscore = 0;
 document.getElementById('totalscore').innerHTML = totalscore;
 userTotal = 0
 
-var wins = 0; 
-var losses = 0; 
-var totalscore = 0; 
 var random = Math.floor(Math.random()*101+20);
-winCount.innerHTML = Wins; 
-lossesCount.innerHTML = Losses;
-totalscore.innerHTML = Totalscore; 
+
 
 $("#numberToGet").text(random);   
    
@@ -45,15 +40,15 @@ function reset() {
 
 function winner() {
     alert("You Won!!")
-    wins++;
-    $("#numberWins").text(wins);
+    winsCount++;
+    $("#wincount").text(winsCount);
     reset();
 }
 
 function loser() {
     alert("You Lose!!");
-    losses++; 
-    $("#numberLosses").text(losses);
+    loseCount++; 
+    $("#lossescount").text(lossesCount);
     reset();
 }
 

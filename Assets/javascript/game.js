@@ -41,14 +41,14 @@ function reset() {
 function winner() {
     alert("You Won!!")
     winsCount++;
-    $("#wincount").text(winsCount);
+    $("#win-counter").text(winCount);
     reset();
 }
 
 function loser() {
     alert("You Lose!!");
-    loseCount++; 
-    $("#lossescount").text(lossesCount);
+    lossesCount++; 
+    $("#loss-counter").text(lossesCount);
     reset();
 }
 

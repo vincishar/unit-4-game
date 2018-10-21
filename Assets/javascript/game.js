@@ -29,10 +29,10 @@ function reset() {
     random = Math.floor(Math.random()*102+19);
     console.log(random);
     $("#numberToGet").text(random);
-    var num1 = Math.floor(Math.random()*12+4);
-    var num2 = Math.floor(Math.random()*12+4);
-    var num3 = Math.floor(Math.random()*12+4);
-    var num4 = Math.floor(Math.random()*12+4);
+    var image1 = Math.floor(Math.random()*12+4);
+    var image2 = Math.floor(Math.random()*12+4);
+    var image3 = Math.floor(Math.random()*12+4);
+    var image4 = Math.floor(Math.random()*12+4);
     userTotal = 0;
     $("#score").text(userTotal);
     $('#finalTotal').text(userTotal);
@@ -40,22 +40,25 @@ function reset() {
 
 function winner() {
     alert("You Won!!")
-    winsCount++;
-    $("#win-counter").text(winCount);
+    winsCount++; 
+    computerChoice = Math.floor(Math.random()*14+2);
+    $("#wincount").text(winCount);
     reset();
 }
 
 function loser() {
     alert("You Lose!!");
-    lossesCount++; 
-    $("#loss-counter").text(lossesCount);
+    lossesCount++;  
+    computerChoice = Math.floor(Math.random()*14+2);
+    $("#losses").text(lossesCount);
     reset();
 }
 
 $("#image1").on("click", function() {
     userTotal = userTotal + num1;
     console.log("New userTotal=" + userTotal);
-    $("#score").text(userTotal);
+    $("#score").text(userTotal); 
+    
 
     if (userTotal === random) {
         winner()

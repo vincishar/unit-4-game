@@ -8,9 +8,13 @@ var targetscore = Math.floor(Math.random()*101+20);;
 document.getElementById('targetscore').innerHTML = targetscore; 
 var totalscore = 0;
 document.getElementById('totalscore').innerHTML = totalscore;
-userTotal = 0
+var userTotal = 0
 
 var random = Math.floor(Math.random()*101+20);
+
+var winCount = 0; 
+var lossesCount = 0; 
+var userTotal = 0; 
 
 
 $("#numberToGet").text(random);   
@@ -47,13 +51,13 @@ function winner() {
 }
 
 function loser() {
-    alert("You Lose!!");
+    alert("You Lose!!");{
     lossesCount++;  
     computerChoice = Math.floor(Math.random()*14+2);
     $("#losses").text(lossesCount);
     reset();
 }
-
+}
 $("#image1").on("click", function() {
     userTotal = userTotal + num1;
     console.log("New userTotal=" + userTotal);

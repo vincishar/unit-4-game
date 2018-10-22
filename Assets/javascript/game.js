@@ -89,7 +89,7 @@ $("#image2").on("click", function() {
 $("#image3").on("click", function() {
     userTotalScore = userTotalScore + num3;
     console.log("New userTotal=" + userTotalScore);
-    $("#totalscore").text(userTotalscore);
+    $("#totalscore").text(userTotalScore);
 
     if (userTotalScore === random) {
         winner()
